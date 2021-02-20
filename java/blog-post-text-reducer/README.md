@@ -1,10 +1,10 @@
 # blog-post-text-reducer
 
-- ![Desafio](#desafio)
-- ![Entrada](#entrada)
-- ![Saída](#saída)
-- ![Exemplos](#exemplos)
-- ![Solução](#solução)
+- [Desafio](#desafio)
+- [Entrada](#entrada)
+- [Saída](#saída)
+- [Exemplos](#exemplos)
+- [Solução](#solução)
 
 # Desafio
 
