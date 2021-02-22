@@ -64,5 +64,7 @@ em ordem crescente da letra inicial.
 # Solução
 
 A solução desse desafio foi desenvolvida totalmente utilizando o máximo que as API's funcionais do java 8 como por exemplo:
-`Stream`, `Collectors`, `Function`, `Suppllier` e `Consumer`. Também foi desenvolvido um método recursivo para 
+`Stream`, `Collectors`, `Function`, `Suppllier` e `Consumer` podem propocionar. Também foi desenvolvido um método recursivo para 
 efetuar a substituição palavras selecionadas pela sua respectiva abreviação.
+
+![Código recusivo que substitui uma palavra em uma frase](https://github.com/UellingtonDamasceno/dio-challenges/blob/main/java/blog-post-text-reducer/res/code.png)
