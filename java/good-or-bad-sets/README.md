@@ -5,7 +5,7 @@
 - [Saída](#saída)
 - [Exemplos](#exemplos)
 - [Solução](#solução)
-  - [Árvore de prefixo](#árvore-de-prefixo)
+  - [Árvore de prefixo](#árvore-de-préfixo)
 
 ## Desafio
 Nesse algoritmo você deverá descobrir se um conjunto de palavras é bom ou ruim. 
@@ -29,7 +29,7 @@ conforme explicado acima.
 ## Exemplos
 | Exemplo de Entrada | Exemplo de Saída |
 | ------------------ | ---------------- |
-| 3<br>abc<br>dae<br>abcde<br>2<br>abc<br>def<br>0 | Conjunto Ruim<br>ConjuntoBom|
+| 3<br>abc<br>dae<br>abcde<br>2<br>abc<br>def<br>0 | Conjunto Ruim<br>Conjunto Bom|
 
 ## Solução
 
@@ -37,12 +37,36 @@ Este problema pode ser resolvido armazenando todas as palavras em uma lista e pa
 palavra da lista comparar com as demais utilizando o método `startWith`. O problema é dessa
 solução é que ela é custosa.
 
-A fim de reduzir o custo da solução anterior foi implementado uma [árvore de prefixo](https://en.wikipedia.org/wiki/Trie)
-que em cada nó armazena um contador de prefixo, um map de caracteres e um booleano que 
+### Árvore de préfixo
+A fim de reduzir o custo da solução anterior foi implementado uma [árvore de préfixo](https://en.wikipedia.org/wiki/Trie)
+que em cada nó armazena um contador de préfixo, um map de caracteres e um booleano que 
 indica se o nó é o final da palavra.
 
-Para resolver o problema utilizando a árvore de prefixo foi necessário ler todas às palavras
+Para resolver o problema utilizando a árvore de préfixo foi necessário ler todas às palavras
 e inserir em uma lista e na árvore. Ao final de todas as leituras, pecorre-se a lista de palavras
 a fim de encontrar algum elemento que não seja único. 
 No algoritmo, uma palavra é unica se o último nó da árvore correspondente a ele for final e 
 possuir um contador de prefixo com valor igual a 1.
+
+```java
+  try (var br = new BufferedReader(new InputStreamReader(System.in, "ISO-8859-1"))) {
+      Trie trie = new Trie();
+      List<String> words = new LinkedList();
+      for (String line = br.readLine(); !line.equals("0"); line = br.readLine()) {
+          int qtdWords = Integer.parseInt(line);
+          for (int i = 0; i < qtdWords; i++) {
+              String currentWord = br.readLine();
+              words.add(currentWord);
+              trie.insert(currentWord);
+          }
+          words.stream()
+                  .filter(word -> !trie.isUnique(word))
+                  .findAny().
+                  ifPresentOrElse(word
+                          -> System.out.println("Conjunto Ruim"),
+                          () -> System.out.println("Conjunto Bom"));
+          trie.clear();
+          words.clear();
+      }
+  }
+```
