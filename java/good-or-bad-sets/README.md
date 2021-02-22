@@ -5,6 +5,7 @@
 - [Saída](#saída)
 - [Exemplos](#exemplos)
 - [Solução](#solução)
+  - [Árvore de prefixo](#árvore-de-prefixo)
 
 ## Desafio
 Nesse algoritmo você deverá descobrir se um conjunto de palavras é bom ou ruim. 
@@ -31,3 +32,17 @@ conforme explicado acima.
 | 3<br>abc<br>dae<br>abcde<br>2<br>abc<br>def<br>0 | Conjunto Ruim<br>ConjuntoBom|
 
 ## Solução
+
+Este problema pode ser resolvido armazenando todas as palavras em uma lista e para cada
+palavra da lista comparar com as demais utilizando o método `startWith`. O problema é dessa
+solução é que ela é custosa.
+
+A fim de reduzir o custo da solução anterior foi implementado uma [árvore de prefixo](https://en.wikipedia.org/wiki/Trie)
+que em cada nó armazena um contador de prefixo, um map de caracteres e um booleano que 
+indica se o nó é o final da palavra.
+
+Para resolver o problema utilizando a árvore de prefixo foi necessário ler todas às palavras
+e inserir em uma lista e na árvore. Ao final de todas as leituras, pecorre-se a lista de palavras
+a fim de encontrar algum elemento que não seja único. 
+No algoritmo, uma palavra é unica se o último nó da árvore correspondente a ele for final e 
+possuir um contador de prefixo com valor igual a 1.
