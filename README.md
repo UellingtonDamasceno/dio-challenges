@@ -9,7 +9,7 @@ Soluções dos desafios propostos pela plataforma de ensino DIO.
   | ------- | ------ | :----: | :------: | :---------: |
   | Somente pares | Dado um número N listar todos os números pares <= N. | :white_check_mark: | [README](https://github.com/UellingtonDamasceno/dio-challenges/tree/main/java/only-even) | Iniciante |
   | DDD | Dado um DDD retornar a cidade correspondente. | :white_check_mark: | [README](https://github.com/UellingtonDamasceno/dio-challenges/tree/main/java/ddd-search) | Iniciante | 
-  | CPF separador | Dado um CPF no formato `XXX.YYY.ZZZ-DD` imprimir cada grupo em uma linha. | :white_check_mark: | [README](https://github.com/UellingtonDamasceno/dio-challenges/tree/main/java/) | Iniciante | 
+  | CPF separador | Dado um CPF no formato `XXX.YYY.ZZZ-DD` imprimir cada grupo em uma linha. | :white_check_mark: | [README](https://github.com/UellingtonDamasceno/dio-challenges/tree/main/java/cpf-spliterator) | Iniciante | 
   | Abreviação de post | Abreviar uma frase com base em um dicionario de palavras a fim de obter a menor frase. | :white_check_mark: | [README](https://github.com/UellingtonDamasceno/dio-challenges/tree/main/java/blog-post-text-reducer) | Intermediário |
   | Conjuntos bons ou ruins | Definir o cárater de um conjunto de palavras com base na unicidade das palavras que o compõe. | :white_check_mark: |  [README](https://github.com/UellingtonDamasceno/dio-challenges/tree/main/java/good-or-bad-sets) | Intermediário |
   
