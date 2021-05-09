@@ -1,2 +1,2 @@
-java/blog-tex-reducer/target/*
-java/good-or-bad-sets/target/*
+java/*/target/*
+java/*/.*
