@@ -18,6 +18,10 @@ A entrada termina quando o valor de `N` for igual a zero (`0`) e esta valor não
 Para cada caso de entrada deverão ser impressas as informações ordenadas pela `cor em ordem ascendente`,
 seguido pelos `tamanhos em ordem descendente` e por último por `ordem ascendente de nome`, conforme o exemplo abaixo.
 
+| Exemplo de Entrada | Exemplo de Saída |
+| ---------------- | -------------- |
+| 9<br>Maria Jose<br>branco P<br>Mangojata Mancuda<br>vermelhor P<br>Cezar Torres Mo<br>branco P<br>Baka Lhau<br>vermelho P<br>Juju Metina<br>branco M<br>Amaro Dinha<br>vermelho P<br>Adabi Finho<br>branco G<br>Severina Rigudinha<br>branco G<br> Carlos Chade Losna<br>vermelho P<br>0 | branco P Cezar Torres Mo<br>branco P Maria Jose<br>branco M Juju Mentina<br>branco G Adabi Finho<br>branco G Severina Rigudinha<br>vermelho P Amaro Dinha<br>vermelho P Baka Lhau<br>vermelho P Carlos Chade Losana<br>vermelho P Mangojata Mancuda|
+
 # Solução
 
 ### Main
