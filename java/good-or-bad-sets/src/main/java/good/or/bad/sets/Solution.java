@@ -9,13 +9,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 
+ *
  * @author Uellington Damasceno
  */
 public class Solution {
 
     public static void main(String[] args) throws IOException {
-        try (var br = new BufferedReader(new InputStreamReader(System.in, "ISO-8859-1"))) {
+        try ( var br = new BufferedReader(new InputStreamReader(System.in, "ISO-8859-1"))) {
             Trie trie = new Trie();
             List<String> words = new LinkedList();
             for (String line = br.readLine(); !line.equals("0"); line = br.readLine()) {
@@ -28,8 +28,7 @@ public class Solution {
                 words.stream()
                         .filter(word -> !trie.isUnique(word))
                         .findAny().
-                        ifPresentOrElse(word
-                                -> System.out.println("Conjunto Ruim"),
+                        ifPresentOrElse(word -> System.out.println("Conjunto Ruim"),
                                 () -> System.out.println("Conjunto Bom"));
                 trie.clear();
                 words.clear();

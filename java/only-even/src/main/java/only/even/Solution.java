@@ -6,6 +6,7 @@ import java.util.stream.Stream;
 /**
  *
  * @author Uellington Damasceno
+ * @git https://github.com/UellingtonDamasceno
  */
 public class Solution {
     public static void main(String[] args) {
