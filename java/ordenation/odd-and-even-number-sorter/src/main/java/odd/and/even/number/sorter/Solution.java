@@ -1,4 +1,4 @@
-package old.and.even.number.sorter;
+package odd.and.even.number.sorter;
 
 import java.io.BufferedReader;
 import java.io.IOException;
