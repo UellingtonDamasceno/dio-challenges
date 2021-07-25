@@ -47,3 +47,7 @@ public static void main(String[] args) throws IOException {
     }
 }
 ```
+----------
+
+| :arrow_left: [Todos os desafios](/java/ordenation#readme) |............................... :arrow_up: [Voltar ao topo](#desafio) :arrow_up: ...............................| [Próximo Desafio](/java/ordenation/no-repeat-list#readme) :arrow_right: | 
+| :----: |-----| :-----:|
