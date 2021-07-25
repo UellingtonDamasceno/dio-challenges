@@ -1,5 +1,7 @@
 # dio-challenges
 
+🔴 Alguns links estão temporariamente quebrados. Peço, por gentileza, que veja os README's navegando pelas pastas 🔴
+
 Soluções dos desafios propostos pela plataforma de ensino DIO.
 
   [Desafios Java](https://github.com/UellingtonDamasceno/dio-challenges/tree/main/java)
